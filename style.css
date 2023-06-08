@@ -1,0 +1,202 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: violet;
+  user-select: none;
+}
+/*desain image website */
+
+.latar1 {
+  background-color: #F4DDB8;
+  width: 95%;
+  border-radius: 28px;
+  border: 8px solid rgba(255, 255, 255, 0.18);
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  transition: .5s ease;
+}
+
+ .gallery {
+   width: 95%;
+   height: 100%;
+   background-size: cover;
+   border-radius: 25px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   border: 8px solid rgba(255, 255, 255, 0.18);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   transition: .5s ease-in-out;
+}
+
+.latar1:hover {
+  background-color: violet ;
+  border: 8px solid rgba(255, 255, 255, 0.18) ;
+}
+.latar2 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   z-index: -9999;
+   width: 95%;
+   animation: latar 2s infinite;
+   transition: .5s ease-in-out;
+   
+}
+
+
+/*latar2*/
+@keyframes latar {
+   50% {
+      transform: translateY(12px);
+      margin-bottom: 15px;
+   }
+   100% {
+      transform: translateY (-12px);
+      
+   }
+}
+
+.latar2:hover {
+   width: 70%;
+   margin-bottom: 5px;
+   border-radius: 25px;
+   border: 8px solid rgba(255, 255, 255, 0.18) ;
+}
+
+ .gallery:hover {
+    width: 70%;
+   
+ }
+
+.title {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 12px auto;
+   font-size: 35px;
+   color: #f4ddb8;
+   border-radius: 25px;
+   background-color: violet;
+   height: 119%;
+}
+
+.judul {
+   width: 95%;
+   height: 150%;
+   padding: 15px auto;
+   background-size: cover;
+   border-radius: 25px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   border: 8px solid rgba(255, 255, 255, 0.18);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   transition: .5s ease-in-out;
+}
+
+.title:Hover {
+   background-color: #F4DDB8;
+   color:violet;
+}
+
+ .judul:hover {
+    width: 50%;
+    height: 55%;
+ }
+
+ /*fake loading*/
+ .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: violet;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #FFC26F;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.content-appear {
+  opacity: 0;
+  animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: .3 ease-in-out;
+  }
+}
+
+/*kembali keatas*/
+
+/* CSS untuk tombol kembali ke atas */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  color: black;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+}
+
+/* Tambahkan properti berikut untuk membuat sudut yang lebih melengkung */
+.back-to-top {
+  border-radius: 50%;
+}
+
+
+
+

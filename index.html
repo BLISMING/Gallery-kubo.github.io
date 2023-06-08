@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumpulan Foto Kubo</title>
+  <link rel="shortcut icon" type="image/x-icon" href="icon.jpg">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <!--loading-->
+  <div id="fake-loading" class="loading">
+    <div class="spinner"></div>
+  </div>
+  <!--content-->
+  <div id="content" class="hidden">
+  <!--character nagisa-->
+  <img src="nagisa.png" alt="" class="latar1">
+    <img src="name_nagisa.png" alt="" class="latar2">
+  <!--gallery kubo-->
+      <img src="kubo1.jpg" alt="kubo" class="gallery">
+      <img src="kubo2.jpg" alt="kubo" class="gallery">
+      <img src="kubo3.jpg" alt="kubo" class="gallery">
+      <img src="kubo4.jpg" alt="kubo" class="gallery">
+      <img src="kubo5.jpg" alt="kubo" class="gallery">
+      <img src="kubo6.jpg" alt="kubo" class="gallery">
+      <img src="kubo7.jpg" alt="kubo" class="gallery">
+      <img src="kubo8.jpg" alt="kubo" class="gallery">
+      <img src="kubo9.jpg" alt="kubo" class="gallery">
+      <img src="kubo10.jpg" alt="kubo" class="gallery">
+      <img src="kubo11.jpg" alt="kubo" class="gallery">
+      <img src="kubo12.jpg" alt="kubo" class="gallery">
+      <img src="kubo13.jpg" alt="kubo" class="gallery">
+      <img src="kubo14.jpg" alt="kubo" class="gallery">
+      <img src="kubo15.jpg" alt="kubo" class="gallery">
+<img src="kubo16.jpg" alt="kubo 16 " class="gallery">
+<img src="kubo17.jpg" alt="kubo 17 " class="gallery">
+<img src="kubo18.jpg" alt="kubo 18 " class="gallery">
+<img src="kubo19.jpg" alt="kubo 19 " class="gallery">
+<img src="kubo20.jpg" alt="kubo 20 " class="gallery">
+<img src="kubo21.jpg" alt="kubo 21 " class="gallery">
+<img src="kubo22.jpg" alt="kubo 22 " class="gallery">
+<img src="kubo23.jpg" alt="kubo 23 " class="gallery">
+<img src="kubo24.jpg" alt="kubo 24 " class="gallery">
+<img src="kubo25.jpg" alt="kubo 25 " class="gallery">
+<img src="kubo26.jpg" alt="kubo 26 " class="gallery">
+<img src="kubo27.jpg" alt="kubo 27 " class="gallery">
+<img src="kubo28.jpg" alt="kubo 28 " class="gallery">
+<img src="kubo29.jpg" alt="kubo 29 " class="gallery">
+<img src="kubo30.jpg" alt="kubo 30 " class="gallery">
+<img src="kubo31.jpg" alt="kubo 31 " class="gallery">
+<img src="kubo32.jpg" alt="kubo 32 " class="gallery">
+<img src="kubo33.jpg" alt="kubo 33 " class="gallery">
+<img src="kubo35.jpg" alt="kubo 35 " class="gallery">
+<img src="kubo36.jpg" alt="kubo 36 " class="gallery">
+<img src="kubo37.jpg" alt="kubo 37 " class="gallery">
+<img src="kubo38.jpg" alt="kubo 38 " class="gallery">
+    
+ <!--back top-->
+ 
+ <div class="back-to-top" onclick="scrollToTop()">
+    &uarr;
+  </div>
+ 
+  </div>
+  <script>
+      window.addEventListener('load', function() {
+  // Simulasi waktu loading selama 7 detik
+  setTimeout(function() {
+    // Menghilangkan tampilan fake loading dan menampilkan konten website dengan animasi muncul halus
+    document.getElementById('fake-loading').classList.add('hidden');
+    document.getElementById('content').classList.remove('hidden');
+    document.getElementById('content').classList.add('content-appear');
+  }, 7000);
+});
+
+
+// back top--
+
+function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+</script>
+  
+</body>
+</html>
